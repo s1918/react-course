@@ -18,10 +18,12 @@ class MemeGen extends Component {
         fetch("https://api.imgflip.com/get_memes")
             .then(response => response.json())
             .then(response => {
-                const {meme} = response.data
-                this.setState({ allMemeImgs: meme})
+                const {memes} = response.data
+                this.setState({ allMemeImgs: memes})
             })
     }
+
+
 
     handleChange(event) {
         const {name, value} = event.target

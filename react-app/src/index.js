@@ -5,5 +5,5 @@ import TestApp from './components/TestApp'
 import MemeGen from './components/MemeGen'
 
 ReactDom.render(
-    <MemeGen />, document.getElementById('root')
+    <MyApp />, document.getElementById('root')
 )
